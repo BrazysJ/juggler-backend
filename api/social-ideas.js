@@ -17,8 +17,7 @@ export default async function handler(req, res) {
 
   const prompt = `
 I am a ${profession} targeting ${audience}. 
-My goal is ${goal}. Generate ${postCount} social media content ideas for ${platform} in a ${tone} tone. 
-Include captions, hashtags, and formats. Respond in markdown table format.
+Include captions, hashtags, and formats. Respond using a clean HTML <table> (use <tr>, <td>, etc). Do not include markdown.
 `;
 
   try {
